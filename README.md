@@ -130,3 +130,9 @@ A lista de resultados já vem com ingredientes e modo de preparo, então a tela 
 - **"Chave da API inválida"**: confira se a chave foi copiada inteira, sem espaços.
 - **"Limite de buscas da API atingido"**: acabaram as 500 buscas do mês, ou foram muitas buscas seguidas. Espere um pouco ou use a chave de outro integrante.
 - **`npm install` muito lento ou com erro `EPERM`**: o OneDrive pode estar sincronizando a pasta `node_modules`. Deixe o projeto numa pasta fora do OneDrive (por exemplo `C:\dev`).
+
+## Uso de ferramentas de apoio (IA)
+
+A disciplina pede que o uso de IA seja documentado.
+
+- **ChatGPT (OpenAI)**: usado para gerar e discutir a ideia do projeto.
