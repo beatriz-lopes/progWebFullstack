@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Chave da Recipe API (nunca enviar para o GitHub)
+.env
