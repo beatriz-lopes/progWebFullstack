@@ -111,9 +111,9 @@ A lista de resultados já vem com ingredientes e modo de preparo, então a tela 
 
 | Integrante | Parte | Arquivos principais |
 | --- | --- | --- |
-| Pessoa 1: Fabio | Busca e integração com a API: campo de pesquisa, chamada com `fetch`, carregando, erro, sem resultados e organização dos dados | `SearchBar.jsx`, `recipeApi.js`, parte do `App.jsx` |
-| Pessoa 2: _(nome)_ | Exibição das receitas: cards, lista, botão "Ver receita" e detalhes | `RecipeCard.jsx`, `RecipeList.jsx`, `RecipeDetails.jsx` |
-| Pessoa 3: Beatriz | Interface e requisitos extras: Material UI, layout, responsividade, `useRef`, cabeçalho e acabamento visual | `Header.jsx`, tema/estilo, parte do `App.jsx` |
+| Pessoa 1: Fabio Eizo Rodriguez Matsumoto | Busca e integração com a API: campo de pesquisa, chamada com `fetch`, carregando, erro, sem resultados e organização dos dados | `SearchBar.jsx`, `recipeApi.js`, parte do `App.jsx` |
+| Pessoa 2: Nádia Yuzawa | Exibição das receitas: cards, lista, botão "Ver receita" e detalhes | `RecipeCard.jsx`, `RecipeList.jsx`, `RecipeDetails.jsx` |
+| Pessoa 3: Beatriz Milanezi Lopes | Interface e requisitos extras: Material UI, layout, responsividade, `useRef`, cabeçalho e acabamento visual | `Header.jsx`, tema/estilo, parte do `App.jsx` |
 
 ## Comandos
 
@@ -136,4 +136,5 @@ A lista de resultados já vem com ingredientes e modo de preparo, então a tela 
 A disciplina pede que o uso de IA seja documentado.
 
 - **Claude (Anthropic)**: usado como copiloto para planejar o desenvolvimento, criar a base do projeto, escrever a primeira versão da busca (`recipeApi.js`, `SearchBar.jsx` e parte do `App.jsx`) e este README. Todo código feito com ajuda da IA passa pela revisão da equipe. Os commits feitos com ajuda da IA trazem a linha `Co-Authored-By: Claude`.
+- **ChatGPT (OpenAI)**: usado para gerar e discutir a ideia do projeto.
 - _(Adicione aqui as outras ferramentas que a equipe usar.)_
