@@ -2,7 +2,7 @@
 // Recebe uma receita no formato montado em src/services/recipeApi.js.
 import { Button, Card, CardActions, CardContent, Chip, Stack, Typography } from '@mui/material';
 
-export default function RecipeCard({ receita }) {
+export default function RecipeCard({ receita, onVerReceita }) {
   return (
     <Card>
       <CardContent>
@@ -27,7 +27,7 @@ export default function RecipeCard({ receita }) {
         </Stack>
       </CardContent>
       <CardActions>
-        <Button size='small'>Ver receita</Button>
+        <Button size='small' onClick={() => onVerReceita(receita)}>Ver receita</Button>
       </CardActions>
     </Card>
   )
