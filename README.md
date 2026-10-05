@@ -112,7 +112,7 @@ A lista de resultados já vem com ingredientes e modo de preparo, então a tela 
 | Integrante | Parte | Arquivos principais |
 | --- | --- | --- |
 | Pessoa 1: Fabio Eizo Rodriguez Matsumoto | Busca e integração com a API: campo de pesquisa, chamada com `fetch`, carregando, erro, sem resultados e organização dos dados | `SearchBar.jsx`, `recipeApi.js`, parte do `App.jsx` |
-| Pessoa 2: Nádia Yuzawa | Exibição das receitas: cards, lista, botão "Ver receita" e detalhes | `RecipeCard.jsx`, `RecipeList.jsx`, `RecipeDetails.jsx` |
+| Pessoa 2: Nádia Akemi Yuzawa | Exibição das receitas: cards, lista, botão "Ver receita" e detalhes | `RecipeCard.jsx`, `RecipeList.jsx`, `RecipeDetails.jsx` |
 | Pessoa 3: Beatriz Milanezi Lopes | Interface e requisitos extras: Material UI, layout, responsividade, `useRef`, cabeçalho e acabamento visual | `Header.jsx`, tema/estilo, parte do `App.jsx` |
 
 ## Comandos
