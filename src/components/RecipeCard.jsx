@@ -18,6 +18,14 @@ export default function RecipeCard({ receita, onVerReceita }) {
         height: "100%",
         display: "flex",
         flexDirection: "column",
+        borderRadius: 3,
+        border: "1px solid #e0e6dc",
+        boxShadow: "0 3px 10px rgba(0, 0, 0, 0.08)",
+        transition: "0.2s",
+        "&:hover": {
+          boxShadow: "0 6px 16px rgba(0, 0, 0, 0.14)",
+          transform: "translateY(-2px)",
+        },
       }}
     >
       <CardContent
@@ -30,11 +38,13 @@ export default function RecipeCard({ receita, onVerReceita }) {
           component={"div"}
           sx={{
             wordBreak: "break-word",
+            color: "#2e7d32",
+            fontWeight: 600,
           }}
         >
           {receita.nome}
         </Typography>
-        <Typography variant="body2" sx={{ color: "text.secondary" }}>
+        <Typography variant="body2" sx={{ color: "text.secondary", mb: 1.5 }}>
           {receita.descricao}
         </Typography>
         <Stack spacing={1.5} sx={{ mt: 1.5 }}>
@@ -53,25 +63,25 @@ export default function RecipeCard({ receita, onVerReceita }) {
             <Chip
               label={`Dificuldade: ${receita.dificuldade}`}
               variant="outlined"
-              sx={{ width: "100%" }}
+              sx={{ width: "100%", bgcolor: "#f3f7f1", borderColor: "#b7c9b0" }}
             />
 
             <Chip
               label={`Culinária: ${receita.culinaria}`}
               variant="outlined"
-              sx={{ width: "100%" }}
+              sx={{ width: "100%", bgcolor: "#f3f7f1", borderColor: "#b7c9b0" }}
             />
 
             <Chip
               label={`Porções: ${receita.porcoes}`}
               variant="outlined"
-              sx={{ width: "100%" }}
+              sx={{ width: "100%", bgcolor: "#f3f7f1", borderColor: "#b7c9b0" }}
             />
 
             <Chip
               label={`Preparo: ${receita.tempoPreparo} min`}
               variant="outlined"
-              sx={{ width: "100%" }}
+              sx={{ width: "100%", bgcolor: "#f3f7f1", borderColor: "#b7c9b0" }}
             />
           </Box>
 
@@ -86,8 +96,11 @@ export default function RecipeCard({ receita, onVerReceita }) {
                   <Chip
                     key={restricao}
                     label={restricao}
-                    variant="outlined"
                     size="small"
+                    sx={{
+                      bgcolor: "#fff3e0",
+                      border: "1px solid #ffcc80",
+                    }}
                   />
                 ))}
               </Stack>
@@ -95,8 +108,24 @@ export default function RecipeCard({ receita, onVerReceita }) {
           )}
         </Stack>
       </CardContent>
-      <CardActions>
-        <Button size="small" onClick={() => onVerReceita(receita)}>
+      <CardActions
+        sx={{
+          px: 2,
+          pb: 2,
+          pt: 0,
+        }}
+      >
+        <Button
+          size="small"
+          variant="contained"
+          onClick={() => onVerReceita(receita)}
+          sx={{
+            bgcolor: "#2e7d32",
+            "&:hover": {
+              bgcolor: "#1b5e20",
+            },
+          }}
+        >
           Ver receita
         </Button>
       </CardActions>
