@@ -20,7 +20,7 @@ Aplicação web feita com React.js em que a pessoa digita um ingrediente que tem
 | SPA (uma página só) | Toda a aplicação roda dentro do `App.jsx` |
 | API JSON aberta | [Recipe API](https://recipeapi.io/docs/) |
 | AJAX | `fetch()` em `src/services/recipeApi.js` |
-| Hook da lista do professor | `useRef` (foco automático no campo de busca), _em andamento_ |
+| Hook da lista do professor | `useRef` (foco automático no campo de busca) |
 | Biblioteca externa | [Material UI](https://mui.com/material-ui/) |
 | Repositório público no GitHub | este repositório |
 
@@ -74,6 +74,7 @@ src/
 ├── App.jsx                 tela principal: junta busca, mensagens e resultados
 ├── main.jsx                ponto de entrada do React
 ├── components/
+│   ├── Header.jsx          cabeçalho
 │   ├── SearchBar.jsx       campo de busca
 │   ├── RecipeList.jsx      lista de resultados
 │   ├── RecipeCard.jsx      card de cada receita
@@ -135,4 +136,9 @@ A lista de resultados já vem com ingredientes e modo de preparo, então a tela 
 
 A disciplina pede que o uso de IA seja documentado.
 
-- **ChatGPT (OpenAI)**: usado para gerar e discutir a ideia do projeto.
+- **ChatGPT (OpenAI)**: utilizado como ferramenta de apoio durante o desenvolvimento, principalmente para:
+  - esclarecer conceitos de React e Material UI;
+  - gerar e discutir a ideia do projeto;
+  - auxiliar na identificação e correção de problemas durante o desenvolvimento.
+
+As sugestões geradas pela ferramenta foram revisadas e adaptadas pela equipe antes de serem incorporadas ao projeto.
