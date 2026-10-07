@@ -18,7 +18,12 @@ export default function SearchBar({ onSearch, carregando, inputRef }) {
     <Box
       component="form"
       onSubmit={handleSubmit}
-      sx={{ display: 'flex', gap: 1, alignItems: 'flex-start' }}
+      sx={{ display: 'flex', gap: 2, alignItems: 'flex-start',
+        flexDirection: {
+          xs: 'column',
+          sm: 'row'
+        }
+       }}
     >
       <TextField
         label="O que você tem em casa?"
@@ -33,7 +38,12 @@ export default function SearchBar({ onSearch, carregando, inputRef }) {
         type="submit"
         variant="contained"
         loading={carregando}
-        sx={{ height: 56, px: 4 }}
+        sx={{ 
+          minWidth: {
+            xs: '100%',
+            sm: 120
+          },
+          height: 56 }}
       >
         Buscar
       </Button>

@@ -19,7 +19,17 @@ export default function RecipeList({ receitas }) {
   }
 
   return (
-    <Box component='section' sx={{ p: 2 }}>
+    <Box 
+    component='section' 
+    sx={{
+      display: 'grid',
+      gridTemplateColumns: {
+        xs: '1fr',
+        sm: 'repeat(2, 1fr)',
+      },
+      gap: 3,
+     }}
+    >
       {receitas.map((receita) => (
         <RecipeCard
           key={receita.id}
