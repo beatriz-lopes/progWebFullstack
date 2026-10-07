@@ -62,9 +62,7 @@ export default function App() {
           {erro && <Alert severity="error">{erro}</Alert>}
 
           {semResultados && (
-            <Alert severity="info">
-              Nenhuma receita encontrada com "{busca}".
-            </Alert>
+            <Alert severity="info">No recipes found for "{busca}".</Alert>
           )}
 
           {receitas.length > 0 && <RecipeList receitas={receitas} />}

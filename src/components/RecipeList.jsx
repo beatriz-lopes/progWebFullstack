@@ -1,34 +1,34 @@
 // Pessoa 2: lista com os resultados da busca.
 // Versão provisória, só para testar a busca. Trocar pelos cards (RecipeCard).
-import { useState } from 'react'
-import { Box } from '@mui/material'
-import RecipeCard from './RecipeCard'
-import RecipeDetails from './RecipeDetails'
+import { useState } from "react";
+import { Box } from "@mui/material";
+import RecipeCard from "./RecipeCard";
+import RecipeDetails from "./RecipeDetails";
 
 export default function RecipeList({ receitas }) {
-  const [receitaSelecionada, setReceitaSelecionada] = useState(null)
-  const [aberto, setAberto] = useState(false)
+  const [receitaSelecionada, setReceitaSelecionada] = useState(null);
+  const [aberto, setAberto] = useState(false);
 
   function handleVerReceita(receita) {
-    setReceitaSelecionada(receita)
-    setAberto(true)
+    setReceitaSelecionada(receita);
+    setAberto(true);
   }
 
   function handleFechar() {
-    setAberto(false)
+    setAberto(false);
   }
 
   return (
-    <Box 
-    component='section' 
-    sx={{
-      display: 'grid',
-      gridTemplateColumns: {
-        xs: '1fr',
-        sm: 'repeat(2, 1fr)',
-      },
-      gap: 3,
-     }}
+    <Box
+      component="section"
+      sx={{
+        display: "grid",
+        gridTemplateColumns: {
+          xs: "1fr",
+          sm: "repeat(2, 1fr)",
+        },
+        gap: 3,
+      }}
     >
       {receitas.map((receita) => (
         <RecipeCard
@@ -44,5 +44,5 @@ export default function RecipeList({ receitas }) {
         onFechar={handleFechar}
       />
     </Box>
-  )
+  );
 }

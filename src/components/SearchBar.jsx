@@ -29,9 +29,9 @@ export default function SearchBar({ onSearch, carregando, inputRef }) {
       }}
     >
       <TextField
-        label="O que você tem em casa?"
+        label="What ingredients do you have?"
         placeholder="ex.: chicken, potato"
-        helperText="Digite em inglês. Para mais de um ingrediente, separe por vírgula."
+        helperText="Enter ingredients in English. Separate multiple ingredients with commas."
         value={ingrediente}
         onChange={(event) => setIngrediente(event.target.value)}
         inputRef={inputRef}
@@ -63,7 +63,7 @@ export default function SearchBar({ onSearch, carregando, inputRef }) {
           height: 56,
         }}
       >
-        Buscar
+        Search
       </Button>
     </Box>
   );

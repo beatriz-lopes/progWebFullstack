@@ -61,25 +61,25 @@ export default function RecipeCard({ receita, onVerReceita }) {
             }}
           >
             <Chip
-              label={`Dificuldade: ${receita.dificuldade}`}
+              label={`Difficulty: ${receita.dificuldade}`}
               variant="outlined"
               sx={{ width: "100%", bgcolor: "#f3f7f1", borderColor: "#b7c9b0" }}
             />
 
             <Chip
-              label={`Culinária: ${receita.culinaria}`}
+              label={`Cuisine: ${receita.culinaria}`}
               variant="outlined"
               sx={{ width: "100%", bgcolor: "#f3f7f1", borderColor: "#b7c9b0" }}
             />
 
             <Chip
-              label={`Porções: ${receita.porcoes}`}
+              label={`Servings: ${receita.porcoes}`}
               variant="outlined"
               sx={{ width: "100%", bgcolor: "#f3f7f1", borderColor: "#b7c9b0" }}
             />
 
             <Chip
-              label={`Preparo: ${receita.tempoPreparo} min`}
+              label={`Prep time: ${receita.tempoPreparo} min`}
               variant="outlined"
               sx={{ width: "100%", bgcolor: "#f3f7f1", borderColor: "#b7c9b0" }}
             />
@@ -88,7 +88,7 @@ export default function RecipeCard({ receita, onVerReceita }) {
           {receita.restricoes.length > 0 && (
             <Stack spacing={0.5}>
               <Typography variant="caption" color="text.secondary">
-                Restrições:
+                Dietary restrictions:
               </Typography>
 
               <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
@@ -126,7 +126,7 @@ export default function RecipeCard({ receita, onVerReceita }) {
             },
           }}
         >
-          Ver receita
+          View recipe
         </Button>
       </CardActions>
     </Card>

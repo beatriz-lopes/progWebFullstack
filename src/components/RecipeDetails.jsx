@@ -119,7 +119,7 @@ export default function RecipeDetails({ receita, aberto, onFechar }) {
               },
             }}
           >
-            Fechar
+            Close
           </Button>
         </Box>
       </Box>
