@@ -134,11 +134,9 @@ A lista de resultados já vem com ingredientes e modo de preparo, então a tela 
 
 ## Uso de ferramentas de apoio (IA)
 
-A disciplina pede que o uso de IA seja documentado.
-
-- **ChatGPT (OpenAI)**: utilizado como ferramenta de apoio durante o desenvolvimento, principalmente para:
+- **ChatGPT (OpenAI)** e **Claude**: utilizados como ferramentas de apoio durante o desenvolvimento, principalmente para:
   - esclarecer conceitos de React e Material UI;
   - gerar e discutir a ideia do projeto;
   - auxiliar na identificação e correção de problemas durante o desenvolvimento.
 
-As sugestões geradas pela ferramenta foram revisadas e adaptadas pela equipe antes de serem incorporadas ao projeto.
+As sugestões geradas pelas ferramentas foram revisadas e adaptadas pela equipe antes de serem incorporadas ao projeto.
