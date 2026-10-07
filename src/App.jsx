@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Alert, Box, CircularProgress, Container, Typography } from '@mui/material'
 import SearchBar from './components/SearchBar'
 import RecipeList from './components/RecipeList'
@@ -9,6 +9,12 @@ export default function App() {
   const [carregando, setCarregando] = useState(false) // esperando a API?
   const [erro, setErro] = useState('') // mensagem de erro, se houver
   const [busca, setBusca] = useState('') // último ingrediente pesquisado
+
+  const inputBuscaRef = useRef(null)
+
+  useEffect(() => {
+      inputBuscaRef.current?.focus()
+  }, [])
 
   async function handleSearch(ingrediente) {
     setBusca(ingrediente)
@@ -22,6 +28,7 @@ export default function App() {
       setErro(e.message)
     } finally {
       setCarregando(false) // roda com sucesso ou com erro
+      inputBuscaRef.current?.focus()
     }
   }
 
@@ -33,7 +40,11 @@ export default function App() {
         Buscador de Receitas
       </Typography>
 
-      <SearchBar onSearch={handleSearch} carregando={carregando} />
+      <SearchBar 
+      onSearch={handleSearch} 
+      carregando={carregando} 
+      inputRef={inputBuscaRef}
+      />
 
       <Box sx={{ mt: 3 }}>
         {carregando && (
