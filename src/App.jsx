@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from 'react'
-import { Alert, Box, CircularProgress, Container, Typography } from '@mui/material'
+import { Alert, Box, CircularProgress, Container } from '@mui/material'
 import SearchBar from './components/SearchBar'
 import RecipeList from './components/RecipeList'
+import Header from './components/Header'
 import { buscarReceitas } from './services/recipeApi'
 
 export default function App() {
@@ -36,9 +37,7 @@ export default function App() {
 
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Buscador de Receitas
-      </Typography>
+      <Header />
 
       <SearchBar 
       onSearch={handleSearch} 
